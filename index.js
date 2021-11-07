@@ -1,7 +1,5 @@
 function superbowlWin(records){
-    let found = records.find(function(record){
-        return record.result === 'W'
-    })
+    let found = records.find(record => record.result === 'W')
     console.log(found)
     if(found){
         return found.year
